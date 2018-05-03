@@ -1,0 +1,41 @@
+::selection {
+  background: #afd7ff;
+}
+.header-text {
+	font-size: 3.5em;
+	letter-spacing: 2vw;
+	font-family: 'Electrolize', sans-serif;
+	font-weight: 900;
+}
+.sub-text {
+	font-size: 1.3em; 
+	letter-spacing: .8vw;
+	font-family: 'Dosis', sans-serif;
+}
+.post-title{
+	text-decoration: none; 
+	letter-spacing: .5vw;
+	color: #fff;
+	font-size: 2em;
+	padding-top: 5vh;
+	font-family: 'Electrolize', sans-serif;
+}
+.post-date{
+	text-decoration: none;
+	color: #595b5e;
+	font-size: .8em;
+	padding-top: 1vh;
+}
+.post-text{
+	color: #d4d6d8;
+	padding-top: 2vh;
+	margin-left: 2.5vw;
+	margin-right: 2.5vw;
+	padding-bottom: 6vh;
+	font-family: 'Dosis', sans-serif;
+	line-height: 2em;
+	font-size: 1.2em;
+}
+.hr-line {
+	bottom: 0;
+}

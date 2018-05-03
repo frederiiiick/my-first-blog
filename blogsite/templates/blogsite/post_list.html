@@ -1,18 +1,30 @@
+{% load staticfiles %}
 <html>
     <head>
-        <title>Django Girls blog</title>
+        <title>Django Boys blog</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="https://fonts.googleapis.com/css?family=Dosis|Electrolize" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/blog.css' %}">
     </head>
-    <body>
-        <div>
-            <h1><a href="/">Django Boys Blog</a></h1>
-        </div>
-
-       {% for post in posts %}
-    <div>
-        <p>published: {{ post.published_date }}</p>
-        <h1><a href="">{{ post.title }}</a></h1>
-        <p>{{ post.text|linebreaksbr }}</p>
+    <body style="background-color: #262728;">
+      <center>
+        <div class="w3-row">
+            <div  style="height: 30%; background-color: #fff;">
+            <div class="header-text">Django <span style="color: #0d2f51;">Boys</span> Blog</div><br>
+            <div class="sub-text">(Awesomeness is not a Legend)<div>
+           </div>
+          <br><br>
+          </div>
+      <div class="w3-row">   
+         {% for post in posts %}
+    <div class="w3-col l6">
+        <div class="post-title">{{ post.title }}</div>
+        <div class="post-date">published: {{ post.published_date }}</div>
+        <div class="post-text">{{ post.text|linebreaksbr }}</div>
+        <div  class="hr-line"><hr></div>
     </div>
 {% endfor %}
+</div>
+
     </body>
 </html>
